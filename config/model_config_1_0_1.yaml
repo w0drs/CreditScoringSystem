@@ -1,0 +1,34 @@
+data:
+  processed: ../../data/processed/processed_df.csv
+  raw:
+    features: ../../data/raw/application_info.csv
+    target: ../../data/raw/default_flg.csv
+  database: ../../data/database/applications.db
+  value_counts:
+    class 0: 159982
+    class 1: 20834
+evaluate:
+  test_roc_auc: 0.726
+  train_roc_auc: 0.745
+  validation_roc_auc: 0.727
+information:
+  author: Golik Dmitry
+  created_at: 2025-08-12
+  model_type: pipeline
+  version: 1.0.1
+model:
+  file_path: ../../model/pipline_model_2.pkl
+  name: pipline LightGBM
+  params:
+    colsample_bytree: 0.6525305504945635
+    learning_rate: 0.047127077338180494
+    max_depth: 3
+    min_child_samples: 15
+    n_estimators: 406
+    num_leaves: 40
+    reg_alpha: 0.0014341754109660826
+    reg_lambda: 0.5210082757225214
+    scale_pos_weight: 11.135712739455382
+    subsample: 0.8230729607127126
+    subsample_freq: 2
+  task: classification
