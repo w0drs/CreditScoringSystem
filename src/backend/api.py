@@ -15,6 +15,7 @@ from src.ml.data_transformers.transformers import TimeTransformer, OutlierTransf
 app = FastAPI()
 # загрузка yaml файла
 model_config = load_yaml_safe("../../config/model_config_1_0_1.yaml")
+threshold = model_config["model"]["threshold"]
 # ML модель
 model = joblib.load(model_config["model"]["file_path"])
 # загрузка данных
@@ -30,8 +31,10 @@ def predict(client: ClientData):
     client_data["application_dt"] = datetime_to_bank_format()
     client_dataframe = pd.DataFrame([client_data])
     try:
-        prediction = model.predict(client_dataframe.drop(columns=['id']))[0]
+        # Предсказание модели
         predict_proba = model.predict_proba(client_dataframe.drop(columns=['id']))[0, 1]
+        # Метка класса по порогу
+        prediction = 1 if predict_proba > threshold else 0
         end = timeit.default_timer()
         processing_time = end - start
         return {
