@@ -93,7 +93,7 @@ CreditScoringSystem/
 - Joblib - сохранение моделей (лучше pickle для pipeline)
 
 Веб и инфраструктура:
-- FastAPI (вместо Flask/Django) - автодокументация + async
+- FastAPI (вместо Flask/Django) - автодокументация
 - Streamlit - быстрый прототип интерфейса
 - Docker + Docker Compose - контейнеризация
 - SQLite - локальная БД для демо
@@ -152,6 +152,7 @@ Recall (дефолт): 0.35 ⬇️
 - Реализовать мониторинг prometheus + graphana
 - Добавить SHAP explanations в интерфейс
 - Перейти на PostgreSQL
+
 
 
 
