@@ -71,12 +71,16 @@ docker-compose up --build
 <div>
 <div align="center" style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="images/main.JPG" width="90%" alt="main_page UI">
-    <p><strong>Streamlit интерфейс</strong><br>Ввод данных и результат</p>
+    <img src="images/main.JPG" width="75%" alt="main_page UI">
+    <p><strong>Streamlit интерфейс</strong><br>Главная страница</p>
   </div>
   <div align="center" style="text-align: center;">
-    <img src="images/details.JPG" width="90%" alt="details">
-    <p><strong>FastAPI документация</strong><br>Swagger UI с примерами</p>
+    <img src="images/predict.JPG" width="75%" alt="predict">
+    <p><strong>Streamlit интерфейс</strong><br>Прогноз модели</p>
+  </div>
+  <div align="center" style="text-align: center;">
+    <img src="images/details.JPG" width="75%" alt="details">
+    <p><strong>Streamlit интерфейс</strong><br>Информация о клиенте</p>
   </div>
 </div>
 
@@ -169,6 +173,7 @@ Recall (дефолт): 0.40 ⬇️
 - Реализовать мониторинг prometheus + graphana
 - Добавить SHAP explanations в интерфейс
 - Перейти на PostgreSQL
+
 
 
 
