@@ -65,6 +65,16 @@ docker-compose up --build
 
 ---
 
+## 📸 Демонстрация работы
+
+<div align="center">
+
+### Веб интерфейс
+<img src="images/main.JPG" width="45%" alt="main_page">
+<img src="images/details.JPG" width="45%" alt="details">
+
+---
+
 ## 📁 Структура проекта
 ```text
 CreditScoringSystem/
@@ -152,6 +162,7 @@ Recall (дефолт): 0.40 ⬇️
 - Реализовать мониторинг prometheus + graphana
 - Добавить SHAP explanations в интерфейс
 - Перейти на PostgreSQL
+
 
 
 
