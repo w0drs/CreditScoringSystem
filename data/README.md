@@ -39,7 +39,8 @@
 Матрица корреляции:
 <div>
   <div style="text-align: center;">
-    <img src="images/corr.JPG" width="50%" alt="corr_matrix">
+    <img src="../images/corr.JPG" width="50%" alt="corr_matrix">
   </div>
 </div>
+
 
